@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #D4EBF8;
+    height: 7.5rem;
+}
+
+header h1 {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    margin-left: 3%;
+    height: 8rem;
+}
+
+nav ul {
+    display: flex;
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 40%;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 1.5rem;
+}
+
+nav li a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ==== HEADER ==== */
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 400px;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+    width: calc(100% - 2rem);
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ==== CONFIRMATION.HTML ==== */
+
+form .card .setReminder {
+    text-align: center;
+}
