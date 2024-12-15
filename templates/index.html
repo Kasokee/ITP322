@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task/Event Reminder</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/img/pic-1.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="/static/img/logo.png" alt="">
+        <h1>Task/Event Reminder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="reminderForm" method="POST" action="/setReminder">
+            <div class="form">
+                <div class="card">
+                    <h3>Set Reminder</h3>
+                    <div class="input">
+                        <label for="reminderName">Reminder Name: </label>
+                        <input type="text" name="reminderName" id="reminderName" required>
+                    </div>
+                    <div class="input">
+                        <label for="personalName">Your Name: </label>
+                        <input type="text" name="personalName" id="personalName" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="date">Date: </label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="input">
+                        <label for="time">Time: </label>
+                        <input type="time" name="time" id="time" required>
+                    </div>
+                    <div class="input">
+                        <label for="message">Message: (Optional) </label>
+                        <input type="text" name="message" id="message">
+                    </div>
+                    <button type="submit">Set Reminder</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
